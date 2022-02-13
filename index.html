@@ -59,6 +59,95 @@
                     <li>eslint, prettier</li>
                 </ul>
             </section>
+            <section>
+                <p>Полезные ссылки</p>
+                <ul>
+                    <li><a href="https://doka.guide">Дока - учебник HTML, CSS, JS</a></li>
+                    <li><a href="https://learn.javascript.ru/">learn.javascript - учебник JS</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/">Документация от Mozilla Foundation (проще всего искать в гугле с приставкой MDN)</a></li>
+                </ul>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>HTML</h1>
+                <aside class="notes">
+                    HTML — язык разметки для создания структуры веб-страницы и представления контента. Благодаря
+                    разметке браузер знает в каком порядке отображать элементы, и что они значат.
+                </aside>
+            </section>
+            <section>
+                <p>Структура тегов</p>
+                <pre>
+                    <code>&lt;тег атрибут=&quot;значение&quot;&gt;контент&lt;/тег&gt;
+&lt;тэг&gt;
+&lt;тег атрибут=&quot;значение&quot;&gt;контент&lt;тег&gt;контент&lt;/тег&gt;&lt;/тег&gt;</code>
+                </pre>
+            </section>
+            <section>
+                Структура HTML
+                <pre>
+                    <code data-line-numbers="|1|2,12|3,7|4|5,10|6|8,11|9|">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+  &lt;head&gt;
+    &lt;link href=&quot;/style.css&quot; rel=&quot;stylesheet&quot;&gt;
+    &lt;script src=&quot;/index.js&quot;&gt;&lt;/script&gt;
+    &lt;title&gt;Document&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;img src=&quot;/hello.jpg&quot; alt=&quot;Привет!&quot;&gt;
+    &lt;script src=&quot;/index1.js&quot;&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code>
+                </pre>
+                <aside class="notes">
+                    <ul>
+                        <li>Структура документа</li>
+                        <li>Инструкция говорит о том что это современный html документ</li>
+                        <li>Начало документа</li>
+                        <li>Заголовок</li>
+                        <li>Подгрузка стилей из файла</li>
+                        <li>Загрузка скрипта</li>
+                        <li>Заголовок документа - показывается в названии вкладки</li>
+                        <li>Тело документа</li>
+                        <li>Картинка</li>
+                    </ul>
+                </aside>
+            </section>
+            <section>
+                <a href="https://doka.guide/html/">Дока гайд</a>
+            </section>
+        </section>
+        <section>
+            <section>
+                <h1>CSS</h1>
+                <aside class="notes">
+                    CSS — язык каскадных стилей, который задаёт визуальное оформления для HTML, SVG и других языков
+                    разметки.
+                </aside>
+            </section>
+            <section>
+                <div>Типичный CSS</div>
+                <pre>
+                    <code class="language-css">
+                        div {
+                            margin: 5px;
+                            padding: 5px;
+                        }
+
+                        .class {
+                            margin: 5px;
+                        }
+
+                        #id {
+                            margin: 5px;
+                        }
+                    </code>
+                </pre>
+            </section>
+            <section>
+                <a href="https://doka.guide/css/">Дока CSS гайд</a>
+            </section>
         </section>
         <section>
             <section>
@@ -532,61 +621,6 @@ window.requestAnimationFrame(animate);</code>
                         близким.
                     </p>
                 </aside>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h1>HTML</h1>
-                <aside class="notes">
-                    HTML — язык разметки для создания структуры веб-страницы и представления контента. Благодаря
-                    разметке браузер знает в каком порядке отображать элементы, и что они значат.
-                </aside>
-            </section>
-            <section>
-                <p>Структура тегов</p>
-                <pre>
-                    <code>&lt;тег атрибут=&quot;значение&quot;&gt;контент&lt;/тег&gt;
-&lt;тэг&gt;
-&lt;тег атрибут=&quot;значение&quot;&gt;контент&lt;тег&gt;контент&lt;/тег&gt;&lt;/тег&gt;</code>
-                </pre>
-            </section>
-            <section>
-                Структура HTML
-                                <pre>
-                    <code data-line-numbers="|1|2,12|3,7|4|5,10|6|8,11|9|">&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-  &lt;head&gt;
-    &lt;link href=&quot;/style.css&quot; rel=&quot;stylesheet&quot;&gt;
-    &lt;script src=&quot;/index.js&quot;&gt;&lt;/script&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;img src=&quot;/hello.jpg&quot; alt=&quot;Привет!&quot;&gt;
-    &lt;script src=&quot;/index1.js&quot;&gt;&lt;/script&gt;
-  &lt;/body&gt;
-&lt;/html&gt;</code>
-                </pre>
-                <aside class="notes">
-                    <ul>
-                        <li>Структура документа</li>
-                        <li>Инструкция говорит о том что это современный html документ</li>
-                        <li>Начало документа</li>
-                        <li>Заголовок</li>
-                        <li>Подгрузка стилей из файла</li>
-                        <li>Загрузка скрипта</li>
-                        <li>Заголовок документа - показывается в названии вкладки</li>
-                        <li>Тело документа</li>
-                        <li>Картинка</li>
-                    </ul>
-                </aside>
-            </section>
-            <section>
-               <a href="https://doka.guide/html/">Дока гайд</a>
-            </section>
-        </section>
-        <section>
-            <section>
-                <h1>CSS</h1>
             </section>
         </section>
     </div>
